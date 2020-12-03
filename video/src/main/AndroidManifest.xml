@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.nice.media_code.video">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <!-- A camera with burst capability is required to use this application -->
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <application>
+        <activity android:name=".VideoCaptureActivity"/>
+        <activity android:name=".RecordVideoActivity" />
+        <activity android:name=".Camera2RecordVideoActivity"/>
+    </application>
+
+</manifest>
